@@ -1,0 +1,348 @@
+/*    actualizar scss <--> css                          */
+/*    sass --watch styles-resp.scss styles-resp.css     */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  background-color: whitesmoke;
+  font-family: Helvetica;
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  background-color: #900000;
+  width: 100%;
+  height: 7%;
+  display: flex;
+  justify-content: space-between;
+}
+header img {
+  max-width: 100%;
+  max-height: 100%;
+}
+header h1 {
+  font-size: 5vh;
+  align-self: center;
+  margin-left: 2%;
+}
+
+#navbar {
+  background-color: black;
+}
+#navbar ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-right: 1%;
+  margin-left: 1%;
+}
+#navbar ul li {
+  margin-top: 1vh;
+  margin-bottom: 1vh;
+}
+#navbar ul li a {
+  position: relative;
+}
+#navbar ul li a::after, #navbar ul li a::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: #ba0000;
+  transition: transform 0.3s;
+  transform: scaleX(0);
+}
+#navbar ul li a::after {
+  bottom: 0;
+}
+#navbar ul li a::before {
+  top: 0;
+}
+#navbar ul li a:hover::after, #navbar ul li a:hover::before {
+  transform: scaleX(1);
+}
+#navbar ul a {
+  text-decoration: none;
+  color: #ba0000;
+}
+
+#main {
+  flex: 1 0 auto;
+  background-color: #ba0000;
+  width: 90%;
+  height: auto;
+  margin-left: 5%;
+  margin-right: 5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#main.contacto-main {
+  justify-content: start;
+}
+#main.tienda-main {
+  flex-wrap: wrap;
+}
+#main.nosotros-main {
+  flex-wrap: wrap;
+  justify-content: center;
+}
+#main.galeria-main {
+  justify-content: start;
+}
+#main.galeria-main h1 {
+  margin: 2vh 2vw 2vh 2vw;
+}
+
+.home-info {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+}
+.home-info h1 {
+  margin: 5%;
+  font-size: 5vh;
+}
+.home-info p {
+  margin-top: 1%;
+  margin-left: 2%;
+}
+
+.home-img {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.home-img img {
+  width: 90%;
+  height: 90%;
+}
+
+.tienda-card {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid black;
+  border-radius: 8px;
+  overflow: hidden;
+  width: 33vw;
+  max-width: 90vw;
+  min-width: 220px;
+  height: 450px;
+  max-height: 60vh;
+  min-height: 300px;
+  margin: 1vh 1vw;
+  box-sizing: content-box;
+  transition: all 0.3s ease-in-out;
+  transform: scale(1);
+}
+.tienda-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  z-index: 10;
+}
+.tienda-card-img-container {
+  width: 100%;
+  height: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.tienda-card-img-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  transition: transform 0.3s ease-in-out;
+}
+.tienda-card:hover .tienda-card-img-container img {
+  transform: scale(1.3);
+}
+.tienda-card-contenido {
+  height: 50%;
+  flex: 1;
+  padding: 1vh 1vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.tienda-card-contenido h3 {
+  height: 50%;
+  margin-top: 2vh;
+  margin-bottom: 2vh;
+}
+.tienda-card-contenido p {
+  font-size: larger;
+  margin-bottom: 1vh;
+}
+
+.contacto-form {
+  padding-left: 5vw;
+  color: whitesmoke;
+  display: flex;
+  flex-direction: column;
+  margin: 2vh 0;
+}
+.contacto-form h1 {
+  margin-bottom: 2vh;
+}
+.contacto-form-input {
+  margin: 2vh 0 4vh 0;
+}
+
+.nosotros-card {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid black;
+  border-radius: 8px;
+  overflow: hidden;
+  width: 280px;
+  max-width: 85vw;
+  min-width: 200px;
+  height: auto;
+  min-height: 400px;
+  margin: 2vh 1vw;
+  background-color: whitesmoke;
+  transition: all 0.3s ease-in-out;
+  transform: scale(1);
+}
+.nosotros-card:hover {
+  transform: scale(1.03);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  z-index: 10;
+}
+.nosotros-card-img {
+  width: 100%;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+.nosotros-card-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease-in-out;
+}
+.nosotros-card:hover .nosotros-card-img img {
+  transform: scale(1.05);
+}
+.nosotros-card-info {
+  flex: 1;
+  padding: 2vh 2vw;
+  display: flex;
+  flex-direction: column;
+}
+.nosotros-card-info-nombre {
+  margin-bottom: 1vh;
+  color: #ba0000;
+  font-size: 2.5vh;
+}
+@media (min-width: 600px) {
+  .nosotros-card-info-nombre {
+    font-size: 2.5vh;
+  }
+}
+@media (min-width: 1024px) {
+  .nosotros-card-info-nombre {
+    font-size: 3vh;
+  }
+}
+.nosotros-card-info-puesto {
+  margin-bottom: 2vh;
+  color: #333;
+  font-size: 2vh;
+}
+@media (min-width: 600px) {
+  .nosotros-card-info-puesto {
+    font-size: 2vh;
+  }
+}
+@media (min-width: 1024px) {
+  .nosotros-card-info-puesto {
+    font-size: 2.5vh;
+  }
+}
+.nosotros-card-info p {
+  line-height: 1.4;
+  color: #666;
+  font-size: 1.8vh;
+}
+@media (min-width: 600px) {
+  .nosotros-card-info p {
+    font-size: 1.8vh;
+  }
+}
+@media (min-width: 1024px) {
+  .nosotros-card-info p {
+    font-size: 2vh;
+  }
+}
+
+footer {
+  flex-shrink: 0;
+  background-color: yellow;
+  width: 100%;
+  height: 5%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (min-width: 600px) {
+  header {
+    height: 10%;
+  }
+  #navbar ul li a {
+    font-size: 3vh;
+  }
+  #main {
+    flex-direction: row;
+    align-items: start;
+  }
+  .info-home {
+    width: 50%;
+  }
+  .img-home {
+    width: 50%;
+  }
+  .info-home h1 {
+    font-size: 5vh;
+  }
+  .info-home p {
+    font-size: 3vh;
+  }
+  .tienda-card-contenido {
+    margin: 5vh 2vw;
+  }
+  .nosotros-card {
+    width: 280px;
+    margin: 2vh 1.5vw;
+  }
+  .nosotros-card-img {
+    height: 180px;
+  }
+}
+@media (min-width: 1024px) {
+  .nosotros-card {
+    width: 320px;
+    margin: 3vh 2vw;
+  }
+  .nosotros-card-img {
+    height: 220px;
+  }
+}
+
+/*# sourceMappingURL=styles-resp.css.map */
