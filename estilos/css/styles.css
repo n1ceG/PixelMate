@@ -1,5 +1,7 @@
 /*    actualizar scss <--> css                          */
+/*                                                      */
 /*    sass --watch styles-resp.scss styles-resp.css     */
+/*    git push origin main                              */
 * {
   margin: 0;
   padding: 0;
@@ -28,9 +30,19 @@ header img {
   max-height: 100%;
 }
 header h1 {
-  font-size: 5vh;
+  font-size: 7vw;
   align-self: center;
   margin-left: 2%;
+}
+@media (min-width: 600px) {
+  header h1 {
+    font-size: 5vw;
+  }
+}
+@media (min-width: 1024px) {
+  header h1 {
+    font-size: 3vw;
+  }
 }
 
 #navbar {
@@ -112,7 +124,17 @@ header h1 {
 }
 .home-info h1 {
   margin: 5%;
-  font-size: 5vh;
+  font-size: 6vw;
+}
+@media (min-width: 600px) {
+  .home-info h1 {
+    font-size: 4vw;
+  }
+}
+@media (min-width: 1024px) {
+  .home-info h1 {
+    font-size: 3vw;
+  }
 }
 .home-info p {
   margin-top: 1%;
@@ -345,4 +367,4 @@ footer {
   }
 }
 
-/*# sourceMappingURL=styles-resp.css.map */
+/*# sourceMappingURL=styles.css.map */

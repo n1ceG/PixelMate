@@ -83,7 +83,7 @@ header {
   }
   
   h1 {
-    @include responsive-font(5vh);
+    @include responsive-font(7vw, 5vw, 3vw);
     align-self: center;
     margin-left: 2%;
   }
@@ -104,27 +104,30 @@ header {
     
     li {
       a{
-          position: relative;
-          &::after, &::before {
-            content: '';
-            position: absolute;
-            left: 0;
-            width: 100%;
-            height: 2px;
-            background: $color-primario;
-            transition: transform 0.3s;
-            transform: scaleX(0);
-          }
-          &::after { 
-            bottom: 0; 
-          }
-          &::before { 
-            top: 0; 
-          }
-          &:hover::after, &:hover::before {
-            transform: scaleX(1);
-          }
+        position: relative;
+        &::after, &::before {
+          content: '';
+          position: absolute;
+          left: 0;
+          width: 100%;
+          height: 2px;
+          background: $color-primario;
+          transition: transform 0.3s;
+          transform: scaleX(0);
+        }
+        &::after { 
+          bottom: 0; 
+        }
+        &::before { 
+          top: 0; 
+        }
+        &:hover::after, &:hover::before {
+          transform: scaleX(1);
+        }
       }
+      // & .nav-button{
+      //   border-radius: 10vw;
+      // }
       margin: {
         top: 1vh;
         bottom: 1vh;
@@ -180,7 +183,7 @@ header {
   
   h1 {
     margin: 5%;
-    @include responsive-font(5vh);
+    @include responsive-font(6vw, 4vw, 3vw);
   }
   
   p {
