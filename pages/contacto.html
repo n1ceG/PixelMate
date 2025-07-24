@@ -3,33 +3,108 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
         <link rel="stylesheet" type="text/css" href="../estilos/css/styles.css"/>
         <title>Contacto</title>
     </head>
     <body>
-        <header>
-            <h1>PíxelMate</h1>
-            <a href="../index.html"><img src="../assets/logo.png" alt="Logo de la página"></a>
-        </header>
-        <nav id="navbar">
-            <ul>
-                <li><a href="../index.html">Inicio</a></li>
-                <li><a href="tienda.html">Tienda</a></li>
-                <li><a href="contacto.html">Contacto</a></li>
-                <li><a href="galeria.html">Galeria</a></li>
-                <li><a href="nosotros.html">Nosotros</a></li>
-            </ul>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="../index.html">
+                <img src="../assets/logo.png" alt="Logo de la página" style="height:60px;">
+                PíxelMate
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="../index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./tienda.html">Tienda</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./contacto.html">Contacto</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./galeria.html">Galeria</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./nosotros.html">Nosotros</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </nav>
-        <section id="main" class="contacto-main">
+        <section class="main-container contacto-flex-container">
             <form class="contacto-form">
                 Ingrese su nombre<input type="text" placeholder="John" class="contacto-form-input">
                 Ingrese su apellido<input type="text" placeholder="Doe" class="contacto-form-input"> 
                 Ingrese su fecha de nacimiento<input type="date" class="contacto-form-input"> 
                 Ingrese su correo electrónico<input type="email" placeholder="ejemplo@correo.com" class="contacto-form-input">
                 Ingrese su número de teléfono<input type="number" placeholder="1560551993" class="contacto-form-input">
-                <input type="submit" value="Enviar solicitud">
+                <button type="button" class="btn btn-outline-primary">Solicitar contacto</button>
             </form>
+            <aside class="contacto-info-box">
+                <h2>¿Por qué contactarnos?</h2>
+                <ul class="contacto-info-list">
+                    <li><span class="contacto-info-icon"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cash-stack" viewBox="0 0 16 16">
+                        <path d="M1 3a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1zm7 8a2 2 0 1 0 0-4 2 2 0 0 0 0 4"/>
+                        <path d="M0 5a1 1 0 0 1 1-1h14a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1H1a1 1 0 0 1-1-1zm3 0a2 2 0 0 1-2 2v4a2 2 0 0 1 2 2h10a2 2 0 0 1 2-2V7a2 2 0 0 1-2-2z"/>
+                      </svg></span> Reembolsos y devoluciones</li>
+                    <li><span class="contacto-info-icon"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-tools" viewBox="0 0 16 16">
+                        <path d="M1 0 0 1l2.2 3.081a1 1 0 0 0 .815.419h.07a1 1 0 0 1 .708.293l2.675 2.675-2.617 2.654A3.003 3.003 0 0 0 0 13a3 3 0 1 0 5.878-.851l2.654-2.617.968.968-.305.914a1 1 0 0 0 .242 1.023l3.27 3.27a.997.997 0 0 0 1.414 0l1.586-1.586a.997.997 0 0 0 0-1.414l-3.27-3.27a1 1 0 0 0-1.023-.242L10.5 9.5l-.96-.96 2.68-2.643A3.005 3.005 0 0 0 16 3q0-.405-.102-.777l-2.14 2.141L12 4l-.364-1.757L13.777.102a3 3 0 0 0-3.675 3.68L7.462 6.46 4.793 3.793a1 1 0 0 1-.293-.707v-.071a1 1 0 0 0-.419-.814zm9.646 10.646a.5.5 0 0 1 .708 0l2.914 2.915a.5.5 0 0 1-.707.707l-2.915-2.914a.5.5 0 0 1 0-.708M3 11l.471.242.529.026.287.445.445.287.026.529L5 13l-.242.471-.026.529-.445.287-.287.445-.529.026L3 15l-.471-.242L2 14.732l-.287-.445L1.268 14l-.026-.529L1 13l.242-.471.026-.529.445-.287.287-.445.529-.026z"/>
+                      </svg></span> Fallos técnicos o soporte</li>
+                    <li><span class="contacto-info-icon"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-headset" viewBox="0 0 16 16">
+                        <path d="M8 1a5 5 0 0 0-5 5v1h1a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V6a6 6 0 1 1 12 0v6a2.5 2.5 0 0 1-2.5 2.5H9.366a1 1 0 0 1-.866.5h-1a1 1 0 1 1 0-2h1a1 1 0 0 1 .866.5H11.5A1.5 1.5 0 0 0 13 12h-1a1 1 0 0 1-1-1V8a1 1 0 0 1 1-1h1V6a5 5 0 0 0-5-5"/>
+                      </svg></span> Consultas sobre productos</li>
+                    <li><span class="contacto-info-icon"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-truck" viewBox="0 0 16 16">
+                        <path d="M0 3.5A1.5 1.5 0 0 1 1.5 2h9A1.5 1.5 0 0 1 12 3.5V5h1.02a1.5 1.5 0 0 1 1.17.563l1.481 1.85a1.5 1.5 0 0 1 .329.938V10.5a1.5 1.5 0 0 1-1.5 1.5H14a2 2 0 1 1-4 0H5a2 2 0 1 1-3.998-.085A1.5 1.5 0 0 1 0 10.5zm1.294 7.456A2 2 0 0 1 4.732 11h5.536a2 2 0 0 1 .732-.732V3.5a.5.5 0 0 0-.5-.5h-9a.5.5 0 0 0-.5.5v7a.5.5 0 0 0 .294.456M12 10a2 2 0 0 1 1.732 1h.768a.5.5 0 0 0 .5-.5V8.35a.5.5 0 0 0-.11-.312l-1.48-1.85A.5.5 0 0 0 13.02 6H12zm-9 1a1 1 0 1 0 0 2 1 1 0 0 0 0-2m9 0a1 1 0 1 0 0 2 1 1 0 0 0 0-2"/>
+                      </svg></span> Estado de tu pedido</li>
+                    <li><span class="contacto-info-icon"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-raised-hand" viewBox="0 0 16 16">
+                        <path d="M6 6.207v9.043a.75.75 0 0 0 1.5 0V10.5a.5.5 0 0 1 1 0v4.75a.75.75 0 0 0 1.5 0v-8.5a.25.25 0 1 1 .5 0v2.5a.75.75 0 0 0 1.5 0V6.5a3 3 0 0 0-3-3H6.236a1 1 0 0 1-.447-.106l-.33-.165A.83.83 0 0 1 5 2.488V.75a.75.75 0 0 0-1.5 0v2.083c0 .715.404 1.37 1.044 1.689L5.5 5c.32.32.5.754.5 1.207"/>
+                        <path d="M8 3a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3"/>
+                      </svg></span> Servicios y asesoramiento</li>
+                </ul>
+                <p class="contacto-info-desc">Nuestro equipo está listo para ayudarte en lo que necesites. ¡No dudes en escribirnos!</p>
+            </aside>
         </section>
-        <footer>PixelMate 2025</footer>
+        <footer class="footer bg-dark text-white mt-auto py-4 w-100">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4">
+                        <h5>PixelMate</h5>
+                        <p>Tu tienda de confianza para equipamiento gaming</p>
+                    </div>
+                    <div class="col-md-4">
+                        <h5>Enlaces Rápidos</h5>
+                        <ul class="list-unstyled">
+                            <li><a href="./index.html" class="text-white">Inicio</a></li>
+                            <li><a href="./pages/tienda.html" class="text-white">Tienda</a></li>
+                            <li><a href="./pages/contacto.html" class="text-white">Contacto</a></li>
+                            <li><a href="./pages/galeria.html" class="text-white">Galería</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-4">
+                        <h5>Contacto</h5>
+                        <ul class="list-unstyled">
+                            <li><i class="bi bi-envelope"></i> info@pixelmate.com</li>
+                            <li><i class="bi bi-telephone"></i> +1234567890</li>
+                            <li><i class="bi bi-geo-alt"></i> Buenos Aires, Argentina</li>
+                        </ul>
+                    </div>
+                </div>
+                <hr class="my-4">
+                <div class="row align-items-center">
+                    <div class="col-md-6 text-center text-md-start">
+                        <p class="mb-0">© 2025 PixelMate. Todos los derechos reservados.</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>c
     </body>
 </html>

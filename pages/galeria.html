@@ -3,27 +3,107 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
         <link rel="stylesheet" type="text/css" href="../estilos/css/styles.css"/>
         <title>Galeria</title>
     </head>
     <body>
-        <header>
-            <h1>PíxelMate</h1>
-            <a href="../index.html"><img src="../assets/logo.png" alt="Logo de la página"></a>
-        </header>
-        <nav id="navbar">
-            <ul>
-                <li><a href="../index.html">Inicio</a></li>
-                <li><a href="tienda.html">Tienda</a></li>
-                <li><a href="contacto.html">Contacto</a></li>
-                <li><a href="galeria.html">Galeria</a></li>
-                <li><a href="nosotros.html">Nosotros</a></li>
-            </ul>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="../index.html">
+                <img src="../assets/logo.png" alt="Logo de la página" style="height:60px;">
+                PíxelMate
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="../index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./tienda.html">Tienda</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./contacto.html">Contacto</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./galeria.html">Galeria</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./nosotros.html">Nosotros</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </nav>
-        <section id="main" class="galeria-main">
-            <h1>BIENVENIDO A NUESTRA GALERÍA</h1>
-            <div class="galeria-"></div>
+        
+        
+        
+        
+        
+        <section class="main-container">
+            <div class="galeria-mapa-row">
+                <div class="galeria-mapa-box">
+                    <iframe class="galeria-mapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13135.110333126726!2d-58.4458562!3d-34.6036846!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca7e0c9b1b81%3A0x19b1b1b1b1b1b1b1!2sBuenos%20Aires!5e0!3m2!1ses-419!2sar!4v1680000000000!5m2!1ses-419!2sar" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                <div class="galeria-mapa-img-box">
+                    <img src="../assets/logo.png" alt="Logo PixelMate" class="galeria-mapa-img galeria-img-animada">
+                </div>
+            </div>
+            <h1 class="galeria-title">Galería de Productos y Equipo</h1>
+            <div class="galeria-grid galeria-grid-2">
+                <div class="galeria-item galeria-hover-text">
+                    <img src="../assets/articulo1.jpg" alt="Artículo 1">
+                    <div class="galeria-img-overlay"><span class="galeria-img-text">Producto destacado</span></div>
+                </div>
+                <div class="galeria-item galeria-hover-text">
+                    <img src="../assets/articulo2.jpg" alt="Artículo 2">
+                    <div class="galeria-img-overlay"><span class="galeria-img-text">¡Oferta especial!</span></div>
+                </div>
+            </div>
         </section>
-        <footer>PixelMate 2025</footer>
+
+
+
+
+
+
+        <footer class="footer bg-dark text-white mt-auto py-4 w-100">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4">
+                        <h5>PixelMate</h5>
+                        <p>Tu tienda de confianza para equipamiento gaming</p>
+                    </div>
+                    <div class="col-md-4">
+                        <h5>Enlaces Rápidos</h5>
+                        <ul class="list-unstyled">
+                            <li><a href="./index.html" class="text-white">Inicio</a></li>
+                            <li><a href="./pages/tienda.html" class="text-white">Tienda</a></li>
+                            <li><a href="./pages/contacto.html" class="text-white">Contacto</a></li>
+                            <li><a href="./pages/galeria.html" class="text-white">Galería</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-4">
+                        <h5>Contacto</h5>
+                        <ul class="list-unstyled">
+                            <li><i class="bi bi-envelope"></i> info@pixelmate.com</li>
+                            <li><i class="bi bi-telephone"></i> +1234567890</li>
+                            <li><i class="bi bi-geo-alt"></i> Buenos Aires, Argentina</li>
+                        </ul>
+                    </div>
+                </div>
+                <hr class="my-4">
+                <div class="row align-items-center">
+                    <div class="col-md-6 text-center text-md-start">
+                        <p class="mb-0">© 2025 PixelMate. Todos los derechos reservados.</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     </body>
 </html>

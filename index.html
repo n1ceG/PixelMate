@@ -3,45 +3,137 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
         <link rel="stylesheet" type="text/css" href="./estilos/css/styles.css"/>
-        <title>Inicio</title>
+        <title>Inicio - PixelMate</title>
     </head>
     <body>
-        <header>
-            <h1>PíxelMate</h1>
-            <a href="index.html"><img src="./assets/logo.png" alt="Logo de la página"></a>
-        </header>
-
-        <nav id="navbar">
-            <ul>
-                <li><button class="nav-button"><a href="index.html">Inicio</a></button></li>
-                <li><button class="nav-button"><a href="./pages/tienda.html">Tienda</a></button></li>
-                <li><button class="nav-button"><a href="./pages/contacto.html">Contacto</a></button></li>
-                <li><button class="nav-button"><a href="./pages/galeria.html">Galeria</a></button></li>
-                <li><button class="nav-button"><a href="./pages/nosotros.html">Nosotros</a></button></li>
-            </ul>
-        </nav>
-        <section id="main">
-            <div class="home-info">
-                <h1>BIENVENIDO A PIXELMATE</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed odit possimus ad fuga similique consequatur
-                    porro quae illo beatae cumque, accusantium molestiae veniam culpa iusto, quaerat error illum. Provident,
-                    et!</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse ipsa impedit et! Similique sunt, aliquid
-                    aliquam vel cum alias, soluta libero nam numquam dolore labore maiores beatae cupiditate consequuntur
-                    fugiat!</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse ipsa impedit et! Similique sunt, aliquid
-                    aliquam vel cum alias, soluta libero nam numquam dolore labore maiores beatae cupiditate consequuntur
-                    fugiat!</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse ipsa impedit et! Similique sunt, aliquid
-                    aliquam vel cum alias, soluta libero nam numquam dolore labore maiores beatae cupiditate consequuntur
-                    fugiat!</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse ipsa impedit et! Similique sunt, aliquid
-                    aliquam vel cum alias, soluta libero nam numquam dolore labore maiores beatae cupiditate consequuntur
-                    fugiat!</p>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="./index.html">
+                    <img src="./assets/logo.png" alt="Logo de la página" style="height:60px;">
+                    PíxelMate
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                    aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button><div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="./index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./pages/tienda.html">Tienda</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./pages/contacto.html">Contacto</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./pages/galeria.html">Galeria</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./pages/nosotros.html">Nosotros</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
-            <div class="home-img"><img src="./assets/logo.png" alt="Imagen de ejemplo de página de inicio"></div>
-        </section>
-        <footer>PixelMate 2025</footer>
+        </nav>
+
+
+
+
+
+
+
+        <div class="main-container">
+            <div class="container py-4">
+                <div class="row d-flex align-items-center">
+                    <div class="col-md text-center home-texto">
+                        <h1>PíxelMate</h1>
+                        <h2>¿Querés comprar los mejores componentes, periféricos, y la mejor experiencia?</h2>
+                        <p class="mt-4">Asesorate con nosotros!</p>
+                    </div>
+                    <div class="col-md-3">
+                        <img src="./assets/logo.png" alt="Imagen del logo" class="w-100 mt-auto">
+                    </div>
+                </div>
+            </div>
+            <div class="container py-4">
+                <div class="row home-cards-row">
+                    <div class="col-sm home-card">
+                        <div class="home-card-icon">
+                            <i class="bi bi-truck"></i>
+                        </div>
+                        <div class="card-body text-center">
+                            <div class="card-title">Entrega Rápida</div>
+                            <div class="card-text">Recibí tus pedidos en tiempo récord.</div>
+                        </div>
+                    </div>
+                    <div class="col-sm home-card">
+                        <div class="home-card-icon">
+                            <i class="bi bi-headset"></i>
+                        </div>
+                        <div class="card-body text-center">
+                            <div class="card-title">Atención al Cliente</div>
+                            <div class="card-text">Te ayudamos en cada paso de tu compra.</div>
+                        </div>
+                    </div>
+                    <div class="col-sm home-card">
+                        <div class="home-card-icon">
+                            <i class="bi bi-shield-check"></i>
+                        </div>
+                        <div class="card-body text-center">
+                            <div class="card-title">Compra Segura</div>
+                            <div class="card-text">Confianza y seguridad garantizadas.</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+
+        <footer class="footer bg-dark text-white mt-auto py-4 w-100">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4">
+                        <h5>PixelMate</h5>
+                        <p>Tu tienda de confianza para equipamiento gaming</p>
+                    </div>
+                    <div class="col-md-4">
+                        <h5>Enlaces Rápidos</h5>
+                        <ul class="list-unstyled">
+                            <li><a href="./index.html" class="text-white">Inicio</a></li>
+                            <li><a href="./pages/tienda.html" class="text-white">Tienda</a></li>
+                            <li><a href="./pages/contacto.html" class="text-white">Contacto</a></li>
+                            <li><a href="./pages/galeria.html" class="text-white">Galería</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-4">
+                        <h5>Contacto</h5>
+                        <ul class="list-unstyled">
+                            <li><i class="bi bi-envelope"></i> info@pixelmate.com</li>
+                            <li><i class="bi bi-telephone"></i> +1234567890</li>
+                            <li><i class="bi bi-geo-alt"></i> Buenos Aires, Argentina</li>
+                        </ul>
+                    </div>
+                </div>
+                <hr class="my-4">
+                <div class="row align-items-center">
+                    <div class="col-md-6 text-center text-md-start">
+                        <p class="mb-0">© 2025 PixelMate. Todos los derechos reservados.</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     </body>
 </html>

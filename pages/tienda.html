@@ -3,66 +3,208 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
         <link rel="stylesheet" type="text/css" href="../estilos/css/styles.css"/>
         <title>Tienda</title>
     </head>
     <body>
-        <header>
-            <h1>PíxelMate</h1>
-            <a href="../index.html"><img src="../assets/logo.png" alt="Logo de la página"></a>
-        </header>
-
-        <nav id="navbar">
-            <ul>
-                <li><a href="../index.html">Inicio</a></li>
-                <li><a href="tienda.html">Tienda</a></li>
-                <li><a href="contacto.html">Contacto</a></li>
-                <li><a href="galeria.html">Galeria</a></li>
-                <li><a href="nosotros.html">Nosotros</a></li>
-            </ul>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="../index.html">
+                <img src="../assets/logo.png" alt="Logo de la página" style="height:60px;">
+                PíxelMate
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="../index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./tienda.html">Tienda</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./contacto.html">Contacto</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./galeria.html">Galeria</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./nosotros.html">Nosotros</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </nav>
 
-        <section id="main" class="tienda-main">
-            <div class="tienda-card">
-                <div class="tienda-card-img-container"><img src="../assets/articulo1.jpg" alt=""></div>
-                <div class="tienda-card-contenido">
-                    <h2>Nombre de producto</h2>
-                    <h3>Descripción breve</h3>
-                    <p>$xxx.xxx</p>
-                    <button>Añadir al carrito</button>
-                </div>
-            </div>
-            
-            <div class="tienda-card">
-                <div class="tienda-card-img-container"><img src="../assets/articulo2.jpg" alt=""></div>
-                <div class="tienda-card-contenido">
-                    <h2>Nombre de producto</h2>
-                    <h3>Descripción breve</h3>
-                    <p>$xxx.xxx</p>
-                    <button>Añadir al carrito</button>
-                </div>
-            </div>
 
-            <div class="tienda-card">
-                <div class="tienda-card-img-container"><img src="../assets/articulo3.jpg" alt=""></div>
-                <div class="tienda-card-contenido">
-                    <h2>Nombre de producto</h2>
-                    <h3>Descripción breve</h3>
-                    <p>$xxx.xxx</p>
-                    <button>Añadir al carrito</button>
+
+
+
+
+
+
+
+
+
+
+        <div class="main-container">
+            <section class="py-5">
+                <div class="container">
+                    <h2 class="text-center mb-5"><span class="animated-underline">¡Ofertas imperdibles!</span></h2>
+                    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 g-4">
+                        <div class="col">
+                            <div class="card">
+                                <img src="../assets/grafica1.jpeg" class="card-img-top" alt="Placa De Video GeForce RTX 5070 12Gb Msi Gaming Trio Oc">
+                                <div class="card-body d-flex flex-column h-100">
+                                    <h5 class="card-title">Placa De Video GeForce RTX 5070 12Gb Msi Gaming Trio Oc</h5>
+                                    <p class="card-text">Placa de video de las más potentes del mercado.</p>
+                                    <div class="mb-auto">
+                                    <span class="precio-tachado">$1.900.000</span>
+                                    <span class="precio-oferta">$999.000</span>
+                                    </div>
+                                    <a href="#" class="btn btn-primary w-100 mt-auto">COMPRAR</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card">
+                                <img src="../assets/microfono1.jpeg" class="card-img-top" alt="Micrófono HyperX Quadcast 2 Streaming Negro">
+                                <div class="card-body d-flex flex-column h-100">
+                                    <h5 class="card-title">Micrófono HyperX Quadcast 2 Streaming Negro</h5>
+                                    <p class="card-text">Micrófono elegante, con una excelente calidad de grabación.</p>
+                                    <div class="mb-auto">
+                                    <span class="precio-tachado">$275.000</span>
+                                    <span class="precio-oferta">$185.000</span>
+                                    </div>
+                                    <a href="#" class="btn btn-primary w-100 mt-auto">COMPRAR</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card">
+                                <img src="../assets/tecladoTOP1.jpeg" class="card-img-top" alt="Teclado Gamer Razer Huntsman V3 Pro Tenkeyless Analog Optical Esports">
+                                <div class="card-body d-flex flex-column h-100">
+                                    <h5 class="card-title">Teclado Gamer Razer Huntsman V3 Pro Tenkeyless Analog Optical Esports</h5>
+                                    <p class="card-text">Sonido envolvente y micrófono retráctil.</p>
+                                    <div class="mb-auto">
+                                    <span class="precio-tachado">$35.000</span>
+                                    <span class="precio-oferta">$27.500</span>
+                                    </div>
+                                    <a href="#" class="btn btn-primary w-100 mt-auto">COMPRAR</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card">
+                                <img src="../assets/tecladoLOW1.jpeg" class="card-img-top" alt="Teclado Logitech Pebble Keys 2 K380S Inalámbrico Blanco">
+                                <div class="card-body d-flex flex-column h-100">
+                                    <h5 class="card-title">Teclado Logitech Pebble Keys 2 K380S Inalámbrico Blanco</h5>
+                                    <p class="card-text">Superficie extendida optimizada para gaming.</p>
+                                    <div class="mb-auto">
+                                    <span class="precio-tachado">$62.000</span>
+                                    <span class="precio-oferta">$40.990</span>
+                                    </div>
+                                    <a href="#" class="btn btn-primary w-100 mt-auto">COMPRAR</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+
+
+            <section class="py-3">
+                <div class="container">
+                    <h2 class="text-center mb-4">Productos destacados</h2>
+                    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3 mb-3">
+                        <div class="col">
+                            <div class="card h-100 small-card">
+                                <img src="../assets/monitorTOP.jpeg" class="card-img-top" alt="Monitor Gamer 27 LG UltraGear Oled 240Hz 0.03Ms 27GS95QE">
+                                <div class="card-body p-2 d-flex flex-column">
+                                    <h6 class="card-title mb-1">Monitor Gamer 27" LG UltraGear Oled 240Hz 0.03Ms 27GS95QE</h6>
+                                    <p class="card-text small">Un monitor con un tamaño ideal, frecuencia muy elevada, y tiempo de respuesta casi inmediato.</p>
+                                    <div class="mb-2"><span class="precio-normal">$1.539.000</span></div>
+                                    <a href="#" class="btn btn-primary mt-auto w-100">Comprar</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card h-100 small-card">
+                                <img src="../assets/monitorMID.jpeg" class="card-img-top" alt="Monitor Gamer 24" LG Full Hd 180Hz 1Ms Freesync 24GS60F">
+                                <div class="card-body p-2 d-flex flex-column">
+                                    <h6 class="card-title mb-1">Monitor Gamer 24" LG Full Hd 180Hz 1Ms Freesync 24GS60F</h6>
+                                    <p class="card-text small">Ideal para largas sesiones.</p>
+                                    <div class="mb-2"><span class="precio-normal">$239.990</span></div>
+                                    <a href="#" class="btn btn-primary mt-auto w-100">Comprar</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card h-100 small-card">
+                                <img src="../assets/monitorLOW.jpeg" class="card-img-top" alt="Monitor Led 22 Gfast 60Hz Fhd Hdm T-220">
+                                <div class="card-body p-2 d-flex flex-column">
+                                    <h6 class="card-title mb-1">Monitor Led 22" Gfast 60Hz Fhd Hdm T-220</h6>
+                                    <p class="card-text small">Comodidad y calidad de sonido.</p>
+                                    <div class="mb-2"><span class="precio-normal">$125.500</span></div>
+                                    <a href="#" class="btn btn-primary mt-auto w-100">Comprar</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+        <footer class="footer bg-dark text-white mt-auto py-4 w-100">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4">
+                        <h5>PixelMate</h5>
+                        <p>Tu tienda de confianza para equipamiento gaming</p>
+                    </div>
+                    <div class="col-md-4">
+                        <h5>Enlaces Rápidos</h5>
+                        <ul class="list-unstyled">
+                            <li><a href="./index.html" class="text-white">Inicio</a></li>
+                            <li><a href="./pages/tienda.html" class="text-white">Tienda</a></li>
+                            <li><a href="./pages/contacto.html" class="text-white">Contacto</a></li>
+                            <li><a href="./pages/galeria.html" class="text-white">Galería</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-4">
+                        <h5>Contacto</h5>
+                        <ul class="list-unstyled">
+                            <li><i class="bi bi-envelope"></i> info@pixelmate.com</li>
+                            <li><i class="bi bi-telephone"></i> +1234567890</li>
+                            <li><i class="bi bi-geo-alt"></i> Buenos Aires, Argentina</li>
+                        </ul>
+                    </div>
+                </div>
+                <hr class="my-4">
+                <div class="row align-items-center">
+                    <div class="col-md-6 text-center text-md-start">
+                        <p class="mb-0">© 2025 PixelMate. Todos los derechos reservados.</p>
+                    </div>
                 </div>
             </div>
-            
-            <div class="tienda-card">
-                <div class="tienda-card-img-container"><img src="../assets/articulo4.jpg" alt=""></div>
-                <div class="tienda-card-contenido">
-                    <h2>Nombre de producto</h2>
-                    <h3>Descripción breve</h3>
-                    <p>$xxx.xxx</p>
-                    <button>Añadir al carrito</button>
-                </div>
-            </div>
-        </section>
-        <footer>PixelMate 2025</footer>
+        </footer>
+        <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     </body>
 </html>

@@ -3,69 +3,145 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
         <link rel="stylesheet" type="text/css" href="../estilos/css/styles.css"/>
         <title>Nosotros</title>
     </head>
     <body>
-        <header>
-            <h1>PixelMate</h1>
-            <a href="../index.html"><img src="../assets/logo.png" alt="Logo de la página"></a>
-        </header>
-        <nav id="navbar">
-            <ul>
-                <li><a href="../index.html">Inicio</a></li>
-                <li><a href="tienda.html">Tienda</a></li>
-                <li><a href="contacto.html">Contacto</a></li>
-                <li><a href="galeria.html">Galeria</a></li>
-                <li><a href="nosotros.html">Nosotros</a></li>
-            </ul>
-        </nav>
-        <section id="main" class="nosotros-main">
-            <div class="nosotros-card">
-                <div class="nosotros-card-img"><img src="../assets/trabajador1.jpeg" alt="Trabajador 1"></div>
-                <div class="nosotros-card-info">
-                    <h1 class="nosotros-card-info-nombre">Nombre del trabajador</h1>
-                    <h2 class="nosotros-card-info-puesto">Puesto del trabajador</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum et quos labore, ducimus saepe tempora
-                        molestias. Alias tempore dolorem non architecto asperiores ullam, quis consequatur ipsa ducimus,
-                        aspernatur tempora modi!
-                    </p>
-                </div>
-            </div>            
-            <div class="nosotros-card">
-                <div class="nosotros-card-img"><img src="../assets/trabajador2.jpeg" alt="Trabajador 2"></div>
-                <div class="nosotros-card-info">
-                    <h1 class="nosotros-card-info-nombre">Nombre del trabajador</h1>
-                    <h2 class="nosotros-card-info-puesto">Puesto del trabajador</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum et quos labore, ducimus saepe tempora
-                        molestias. Alias tempore dolorem non architecto asperiores ullam, quis consequatur ipsa ducimus,
-                        aspernatur tempora modi!
-                    </p>
-                </div>
-            </div>            
-            <div class="nosotros-card">
-                <div class="nosotros-card-img"><img src="../assets/trabajador3.jpeg" alt="Trabajador 3"></div>
-                <div class="nosotros-card-info">
-                    <h1 class="nosotros-card-info-nombre">Nombre del trabajador</h1>
-                    <h2 class="nosotros-card-info-puesto">Puesto del trabajador</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum et quos labore, ducimus saepe tempora
-                        molestias. Alias tempore dolorem non architecto asperiores ullam, quis consequatur ipsa ducimus,
-                        aspernatur tempora modi!
-                    </p>
-                </div>
-            </div>            
-            <div class="nosotros-card">
-                <div class="nosotros-card-img"><img src="../assets/trabajador4.jpeg" alt="Trabajador 4"></div>
-                <div class="nosotros-card-info">
-                    <h1 class="nosotros-card-info-nombre">Nombre del trabajador</h1>
-                    <h2 class="nosotros-card-info-puesto">Puesto del trabajador</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum et quos labore, ducimus saepe tempora
-                        molestias. Alias tempore dolorem non architecto asperiores ullam, quis consequatur ipsa ducimus,
-                        aspernatur tempora modi!
-                    </p>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="../index.html">
+                <img src="../assets/logo.png" alt="Logo de la página" style="height:60px;">
+                PíxelMate
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="../index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./tienda.html">Tienda</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./contacto.html">Contacto</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./galeria.html">Galeria</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./nosotros.html">Nosotros</a>
+                        </li>
+                    </ul>
                 </div>
             </div>
-        </section>
-        <footer>PixelMate 2025</footer>
+        </nav>
+
+
+
+
+
+
+
+        
+        <div class="main-container">
+            <div class="row g-4 d-flex py-4 team-cards-row">
+                <!-- Trabajador 1 -->
+                <div class="col-12 col-md-10 col-lg-8 mx-auto mb-4">
+                    <div class="card team-card-horizontal fade-in-up h-100 d-flex flex-row align-items-center">
+                        <div class="team-img-box">
+                            <img src="../assets/trabajador1.jpeg" class="team-img" alt="Nombre del trabajador 1">
+                        </div>
+                        <div class="card-body team-info-box">
+                            <h5 class="card-title fw-bold mb-2">Juan Martín Álvarez</h5>
+                            <p class="text-muted mb-3">Contador</p>
+                            <p class="card-text text-secondary">"Mi trabajo es mantener los números del equipo al día."</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Trabajador 2 -->
+                <div class="col-12 col-md-10 col-lg-8 mx-auto mb-4">
+                    <div class="card team-card-horizontal fade-in-up h-100 d-flex flex-row align-items-center">
+                        <div class="team-img-box">
+                            <img src="../assets/trabajador2.jpeg" class="team-img" alt="Nombre del trabajador 2">
+                        </div>
+                        <div class="card-body team-info-box">
+                            <h5 class="card-title fw-bold mb-2">Clara Morales</h5>
+                            <p class="text-muted mb-3">Community Manager</p>
+                            <p class="card-text text-secondary">"Yo administro las redes sociales del equipo, y contacto a los clientes."</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Trabajador 3 -->
+                <div class="col-12 col-md-10 col-lg-8 mx-auto mb-4">
+                    <div class="card team-card-horizontal fade-in-up h-100 d-flex flex-row align-items-center">
+                        <div class="team-img-box">
+                            <img src="../assets/trabajador3.jpeg" class="team-img" alt="Nombre del trabajador 3">
+                        </div>
+                        <div class="card-body team-info-box">
+                            <h5 class="card-title fw-bold mb-2">María Galves</h5>
+                            <p class="text-muted mb-3">Programadora</p>
+                            <p class="card-text text-secondary">"Me encargo de desarrollar, mantener, y modificar los medios informáticos del equipo, como lo es esta página web."</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Trabajador 4 -->
+                <div class="col-12 col-md-10 col-lg-8 mx-auto mb-4">
+                    <div class="card team-card-horizontal fade-in-up h-100 d-flex flex-row align-items-center">
+                        <div class="team-img-box">
+                            <img src="../assets/trabajador4.jpeg" class="team-img" alt="Nombre del trabajador 4">
+                        </div>
+                        <div class="card-body team-info-box">
+                            <h5 class="card-title fw-bold mb-2">Graciela García</h5>
+                            <p class="text-muted mb-3">Directora del Equipo</p>
+                            <p class="card-text text-secondary">"Cada día trabajo en ayudar al equipo a solucionar sus problemas, resolver conflictos, y sobre todo dirigir al equipo hacia el fin común."</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+        <footer class="footer bg-dark text-white mt-auto py-4 w-100">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4">
+                        <h5>PixelMate</h5>
+                        <p>Tu tienda de confianza para equipamiento gaming</p>
+                    </div>
+                    <div class="col-md-4">
+                        <h5>Enlaces Rápidos</h5>
+                        <ul class="list-unstyled">
+                            <li><a href="./index.html" class="text-white">Inicio</a></li>
+                            <li><a href="./pages/tienda.html" class="text-white">Tienda</a></li>
+                            <li><a href="./pages/contacto.html" class="text-white">Contacto</a></li>
+                            <li><a href="./pages/galeria.html" class="text-white">Galería</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-4">
+                        <h5>Contacto</h5>
+                        <ul class="list-unstyled">
+                            <li><i class="bi bi-envelope"></i> info@pixelmate.com</li>
+                            <li><i class="bi bi-telephone"></i> +1234567890</li>
+                            <li><i class="bi bi-geo-alt"></i> Buenos Aires, Argentina</li>
+                        </ul>
+                    </div>
+                </div>
+                <hr class="my-4">
+                <div class="row align-items-center">
+                    <div class="col-md-6 text-center text-md-start">
+                        <p class="mb-0">© 2025 PixelMate. Todos los derechos reservados.</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     </body>
 </html>
